@@ -14,8 +14,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="overflow-x-hidden bg-black">
-    <nav class="fixed top-0 z-20 flex w-full py-6 bg-amber-900 drop-shadow-2xl">
+  <body class="bg-black overflow-x-hidden">
+    <nav class="fixed top-0 z-20 flex w-screen py-6 bg-amber-900 drop-shadow-2xl">
       <div class="container flex items-center ml-6">
         <i
           class="fa-solid fa-scissors fa-lg text-xl h-full x font-bold text-white drop-shadow-md text-4xl lg:text-4xl md:text-4xl sm:text-xl"
@@ -25,14 +25,14 @@
       </div>
 
       <div class="flex items-center justify-items-end">
-        <div class="flex mr-10 space-x-6">
+        <div class="flex mr-4 lg:mr-8 md:mr-8 sm:mr-4 space-x-2 lg:space-x-6 md:space-x-6 sm:space-x-2 ">
           <a href="#" class="text-white">Home</a>
           <div class="h-6 border-r border-white-700"></div>
           <a href="#" class="text-white">Sobre</a>
           <div class="h-6 border-r border-white-700"></div>
           <a href="#planos" class="text-white">Planos</a>
-          <div class="h-6 border-r border-white-700"></div>
-          <a href="#" class="text-white">Contato</a>
+          <div class="h-6  border-r border-white-700"></div>
+          <a href="#" class="text-white mr-2">Contato</a>
         </div>
       </div>
       <div></div>
@@ -47,7 +47,7 @@
       <div class="absolute inset-0 bg-black opacity-50 w-screen"></div>
 
       <div
-        class="absolute top-0 left-0 z-10 w-full pt-64 ml-24 font-sans text-4xl text-white transition-transform duration-500 ease-in-out transform hover:scale-105 lg:text-8xl md:text-6xl sm:text-4xl"
+        class="absolute top-0 left-0 z-10 pt-64 ml-24 font-sans text-4xl text-white transition-transform duration-500 ease-in-out transform hover:scale-105 lg:text-8xl md:text-6xl sm:text-4xl"
       >
         Barba.<br />De homens<br />Para homens.<br />
         <div
@@ -67,7 +67,7 @@
         class="absolute inset-0 duration-500 ease-in-out bg-black opacity-50 group hover:opacity-80"
       >
         <div
-          class="absolute top-0 left-0 flex items-center justify-center w-full pt-64 text-center text-white transition-opacity duration-500 opacity-0 text-4xl lg:text-8xl md:text-6xl sm:text-4xl h-1/2 group-hover:opacity-100"
+          class="absolute top-0 left-0 flex items-center justify-center w-full pt-64  text-center text-white transition-opacity duration-500 opacity-0 text-4xl lg:text-8xl md:text-6xl sm:text-4xl h-1/2 group-hover:opacity-100"
         >
           <p>
             Nós da <i class="fa-solid fa-scissors fa-lg"> BRB</i><br />temos
@@ -93,12 +93,12 @@
         />
 
         <div
-          class="absolute top-0 mt-24 bg-white shadow-2xl h-3/4 text-xl w-3/4 lg:w-1/2 md:w-1/2 sm:w-3/4"
+          class="absolute break-words top-0 mt-24 bg-white shadow-2xl h-1/2 lg:h-3/4 md:h-3/4 sm:h-1/2 text-xl w-3/4 lg:w-1/2 md:w-3/4 sm:w-3/4"
         >
           <div
-            class="top-0 left-0 flex items-center ml-16 justify-start w-full h-full text-left text-black transition-opacity duration-500 opacity-0 text-2xl lg:text-6xl md:text-4xl sm:text-2xl group-hover:opacity-100"
+            class="top-0 left-0 flex items-center ml-6 lg:ml-10 md:ml-10 sm:ml-6 justify-start w-full h-full text-left text-black transition-opacity duration-500 opacity-0 text-3xl lg:text-6xl md:text-3xl sm:text-3xl group-hover:opacity-100"
           >
-            <p>
+            <p class="w-full">
               Encontre a <i class="fa-solid fa-scissors fa-lg"></i>BRB mais
               <br />próxima de você! <br /><br /><i
                 class="fa-solid fa-map-pin"
@@ -113,7 +113,7 @@
 
       <div
         id="planos"
-        class="items-center w-full h-full p-8 bg-black justify-evenly w-96 lg:flex sm:column sm:justify-items-center"
+        class="items-center w-full h-full bg-black justify-evenly w-96 lg:flex sm:column sm:justify-items-center"
       >
         <img
           src="..\images\barbplanos.png"
