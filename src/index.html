@@ -11,7 +11,7 @@
 </head>
 <body class="bg-black overflow-x-hidden">
 
-<nav class="bg-amber-900 static py-6 flex sticky top-0 z-20 drop-shadow-2xl">
+<nav class="bg-amber-900 fixed py-6 flex w-full top-0 z-20 drop-shadow-2xl">
     <div class="container flex items-center ml-6 ">
         <a href="#" class="text-white text-4xl font-bold drop-shadow-md"><i class="fa-solid fa-scissors fa-lg"> BRB</i></a>
     </div>
@@ -23,7 +23,7 @@
             <div class="border-r border-white-700 h-6"></div>
             <a href="#" class="text-white">Sobre</a>
             <div class="border-r border-white-700 h-6"></div>
-            <a href="#" class="text-white">Serviços</a>
+            <a href="#planos" class="text-white">Planos</a>
             <div class="border-r border-white-700 h-6"></div>
             <a href="#" class="text-white">Contato</a>
         </div>
@@ -36,10 +36,16 @@
     <img src="..\images\barba.png" alt="Imagem de Fundo" class="object-cover w-screen h-screen">
     <div class="absolute inset-0 bg-black opacity-50"></div>
 
-    <div class=" absolute left-0 top-0 pl-32 pt-64 text-8xl text-white ease-in-out duration-500 w-full font-sans z-10
-    hover:scale-105 transform transition-transform">
+    <div class=" absolute left-0 top-0 pl-16 pt-64 text-white ease-in-out duration-500 w-full font-sans z-10
+    hover:scale-105 transform transition-transform
+    lg:text-8xl
+    md:text-6xl
+    sm:text-4xl">
         Barba.<br>De homens<br>Para homens.<br>
-        <div class="border-2 mt-8 border-white w-32 scale-150 transition-transform"></div>
+        <div class="border-2 mt-8 border-white w-32 scale-150 transition-transform
+        lg:w-18
+        md:w-14
+        sm:w-12"></div>
     </div>
 </div>
 
@@ -81,7 +87,7 @@ hover:opacity-80 ease-in-out duration-500">
 
     
 
-  <div class="flex bg-black items-center w-full h-full justify-evenly bg-black p-8  w-96">
+  <div id="planos" class="flex bg-black items-center w-full h-full justify-evenly bg-black p-8  w-96">
     
     <img src="..\images\barbplanos.png" alt="Imagem de Fundo" class="absolute object-cover w-screen h-screen shadow-2xl shadow-inner opacity-50 blur-sm">
 
@@ -102,7 +108,7 @@ hover:opacity-80 ease-in-out duration-500">
     </div>
 
     <div class="relative text-3xl text-center hover:scale-110 transition-transform ease-in-out duration-300">
-        <div class="bg-white p-10 rounded-3xl shadow-lg"> 
+        <div class="bg-white p-8 rounded-3xl shadow-lg"> 
       <h2 class=" font-semibold mb-6">Plano <span class="text-green-500">Homem</span></h2>
       
       <h2 class="font-semibold text-gray-700 text-2xl mb-6">2 Cortes e Barba
@@ -120,7 +126,7 @@ hover:opacity-80 ease-in-out duration-500">
 
     <div class="relative text-4xl text-center
     hover:scale-110 transition-transform ease-in-out duration-300">
-        <div class="bg-white p-16 rounded-3xl shadow-lg">
+        <div class="bg-white p-10 rounded-3xl shadow-lg">
 
       <h2 class="font-semibold mb-6">Plano <span class="text-amber-400">Macho</span></h2>
 
